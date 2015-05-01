@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CA Gallery Portrait Switch feature.
+ */
+
+include_once 'ca_gallery_portrait_switch.features.inc';

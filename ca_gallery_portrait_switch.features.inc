@@ -10,12 +10,12 @@
 function ca_gallery_portrait_switch_field_default_field_instances_alter(&$data) {
   if (isset($data['node-ca_gallery-field_ca_gallery_gallery_image'])) {
     $data['node-ca_gallery-field_ca_gallery_gallery_image']['widget']['settings']['manualcrop_styles_list']['crop_default_portrait'] = 'crop_default_portrait'; /* WAS: '' */
-    $data['node-ca_gallery-field_ca_gallery_gallery_image']['widget']['settings']['preview_image_style'] = 'crop_default_portrait'; /* WAS: 'crop_default_landscape' */
+    $data['node-ca_gallery-field_ca_gallery_gallery_image']['widget']['settings']['preview_image_style'] = 'crop_default_portrait_preview'; /* WAS: 'crop_default_landscape_preview' */
     unset($data['node-ca_gallery-field_ca_gallery_gallery_image']['widget']['settings']['manualcrop_styles_list']['crop_default_landscape']);
   }
   if (isset($data['node-ca_gallery_image-field_gallery_image_g_image'])) {
     $data['node-ca_gallery_image-field_gallery_image_g_image']['widget']['settings']['manualcrop_styles_list']['crop_default_portrait'] = 'crop_default_portrait'; /* WAS: '' */
-    $data['node-ca_gallery_image-field_gallery_image_g_image']['widget']['settings']['preview_image_style'] = 'crop_default_portrait'; /* WAS: 'crop_default_landscape' */
+    $data['node-ca_gallery_image-field_gallery_image_g_image']['widget']['settings']['preview_image_style'] = 'crop_default_portrait_preview'; /* WAS: 'crop_default_landscape_preview' */
     unset($data['node-ca_gallery_image-field_gallery_image_g_image']['widget']['settings']['manualcrop_styles_list']['crop_default_landscape']);
   }
 }

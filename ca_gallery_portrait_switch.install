@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function ca_gallery_portrait_switch_portrait_switch_install() {
+  variable_get('ca_gallery_display', 'ca_gallery_display_portrait');
+}
+
+
+/**
+ * Implements hook_uninstall().
+ *
+ * Perform actions to revert the set up for the site.
+ */
+function ca_gallery_portrait_switch_portrait_switch_uninstall() {
+  variable_get('ca_gallery_display', 'ca_gallery_display_landscape');
+}
+
+/**
+ * Updated to ensure the ca_adv_staff_display variable gets set.
+ */
+function ca_gallery_portrait_switch_update_7000() {
+  variable_get('ca_gallery_display', 'ca_gallery_display_portrait');
+}
